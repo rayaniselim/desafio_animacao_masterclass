@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'page_button.dart';
+import 'implícitas/exercicio_2/expansion_tile.dart';
 
 void main() {
   runApp(const HomePage());
@@ -16,13 +16,8 @@ class HomePage extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-            title: const Text(
-          'Desafio Botão Flutuante',
-        )),
-        body: const PageButton(),
-      ),
+      // home: const PageButton(),
+      home: const ExpansionTilePage(),
     );
   }
 }
